@@ -13,3 +13,7 @@ body{
   background: #121212;
   color: #A1A1A1;
 }
+::selection{
+  background: rgba(121,40,202,0.6) ;
+  color: #fff;
+}

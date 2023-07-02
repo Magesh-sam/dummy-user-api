@@ -1,16 +1,28 @@
-import { Card } from "@/components/Card";
 import Link from "next/link";
 
 export default function Home() {
 
-
+  function generateRandomNumber(min:number, max:number) {
+    // Generate a random number between min (inclusive) and max (inclusive)
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  
+  // Generate a random number between 1 and 10
+  const r1 = generateRandomNumber(1,20)
+  const r2 = generateRandomNumber(21,40)
+  const r3 = generateRandomNumber(41,60)
+  const r4 = generateRandomNumber(61,80)
+  const r5 = generateRandomNumber(81, 100)
+  
+  console.log(r1,r2,r3,r4,r5)
+  
 
   return (
-    <main className="min-h-screen mb-5 flex flex-col pt-[10%] items-center gap-5">
+    <main className="h-screen flex flex-col pt-[10%] items-center gap-5">
       <section className="w-[70%]  flex flex-col gap-5 ">
         <div
           className="flex  items-center
-           font-bold text-lg xs:text-2xl sm:text-4xl md:text-5xl lg:6xl xl:10xl  "
+           font-bold text-sm xs:text-lg sm:text-xl md:text-2xl lg:3xl xl:4xl  "
         >
           <h1 className="w-max bg-clip-text  text-transparent bg-gradient-to-r from-purple-600  to-pink-500">
             Generate Random users
@@ -25,10 +37,8 @@ export default function Home() {
         <p className="text-[#A1A1A1]  text-sm sm:text-lg  md:text-xl lg:text-2xl  ">Designed in <span className="w-max font-bold bg-clip-text  text-transparent bg-gradient-to-r  from-pink-500 to-purple-600 ">Figma</span> Build with <span className="w-max font-bold bg-clip-text  text-transparent bg-gradient-to-r  from-pink-500 to-purple-600 ">NEXT.JS</span> </p>
       <Link className=" text-sm sm:text-lg  md:text-xl lg:text-2xl" href='https://github.com/magesh-sam'> <span className="w-max font-bold bg-clip-text  text-transparent bg-gradient-to-r  from-pink-500 to-purple-600 ">Source:</span> https://github.com/magesh-sam</Link>
       </section>
-      <section className="w-full h-full grid grid-cols-[repeat(1,280px)] md:grid-cols-[repeat(2,280px)] lg:grid-cols-[repeat(3,280px)] xl:grid-cols-[repeat(4,280px)] 2xl:grid-cols-[repeat(5,280px)] justify-center gap-3 mt-10 " >
-        {[1,2,3,4,5].map((id,index) => (
-         <Card  key={index} id={id} />
-       ))}
+      <section>
+        <Card id={r1} />
       </section>
     </main>
   );

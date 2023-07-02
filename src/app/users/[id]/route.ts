@@ -15,8 +15,9 @@ export async function GET(req: Request, { params }: { params: { id: string } }) 
         const collectionRef = collection(db, "users")
       const q= query(collectionRef,where("id","==",Number(id)));
     const querySnapshot = await getDocs(q);
-    const userData = querySnapshot.docs.map((doc) => doc.data());
-    return NextResponse.json(userData);
+      const userData = querySnapshot.docs.map((doc) => doc.data());
+      console.log(userData[0]);
+    return NextResponse.json(userData[0]);
   } catch (error) {
     const err = {
       message: 'failed to fetch data, try again',
