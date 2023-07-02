@@ -16,7 +16,7 @@ type Data = {
 }
 export const Card:FC<ICard> = async ({id}) => {
     
-    const res=await axios.get(`http://localhost:3000/users/${id}`)
+    const res=await axios.get(`https://dummyuser.vercel.app/users/${id}`)
  
     const data: Data = await res.data;
     console.log(data.avatar);
