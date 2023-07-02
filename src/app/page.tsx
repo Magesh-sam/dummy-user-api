@@ -25,11 +25,11 @@ export default function Home() {
         <p className="text-[#A1A1A1]  text-sm sm:text-lg  md:text-xl lg:text-2xl  ">Designed in <span className="w-max font-bold bg-clip-text  text-transparent bg-gradient-to-r  from-pink-500 to-purple-600 ">Figma</span> Build with <span className="w-max font-bold bg-clip-text  text-transparent bg-gradient-to-r  from-pink-500 to-purple-600 ">NEXT.JS</span> </p>
       <Link className=" text-sm sm:text-lg  md:text-xl lg:text-2xl" href='https://github.com/magesh-sam'> <span className="w-max font-bold bg-clip-text  text-transparent bg-gradient-to-r  from-pink-500 to-purple-600 ">Source:</span> https://github.com/magesh-sam</Link>
       </section>
-      <section className="w-full h-full grid grid-cols-[repeat(1,280px)] md:grid-cols-[repeat(2,280px)] lg:grid-cols-[repeat(3,280px)] xl:grid-cols-[repeat(4,280px)] 2xl:grid-cols-[repeat(5,280px)] justify-center gap-3 mt-10 " >
+      {/* <section className="w-full h-full grid grid-cols-[repeat(1,280px)] md:grid-cols-[repeat(2,280px)] lg:grid-cols-[repeat(3,280px)] xl:grid-cols-[repeat(4,280px)] 2xl:grid-cols-[repeat(5,280px)] justify-center gap-3 mt-10 " >
         {[1,2,3,4,5].map((id,index) => (
          <Card  key={index} id={id} />
        ))}
-      </section>
+      </section> */}
     </main>
   );
 }
