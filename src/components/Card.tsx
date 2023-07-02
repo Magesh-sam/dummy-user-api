@@ -19,7 +19,6 @@ export const Card:FC<ICard> = async ({id}) => {
     const res=await axios.get(`https://dummyuser.vercel.app/users/${id}`)
  
     const data: Data = await res.data;
-    console.log(data.avatar);
   return (
       <div className=" text-white  bg-gradient-to-r from-purple-600  to-pink-500 w-[280px] h-[400px] 
        rounded-lg flex flex-col items-center gap-3"  >
