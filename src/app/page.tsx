@@ -13,7 +13,7 @@ export default function Home() {
            font-bold text-lg xs:text-2xl sm:text-4xl md:text-5xl lg:6xl xl:10xl  "
         >
           <h1 className="w-max bg-clip-text  text-transparent bg-gradient-to-r from-purple-600  to-pink-500">
-            Generate Random users MF
+            Generate Random users
           </h1>
           <span> 👨‍🚀</span>
         </div>
