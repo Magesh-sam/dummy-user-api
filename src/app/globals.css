@@ -12,8 +12,20 @@ body{
   min-height: 100vh;
   background: #121212;
   color: #A1A1A1;
+  overflow-x: hidden;
 }
 ::selection{
   background: rgba(121,40,202,0.6) ;
   color: #fff;
+}
+/* width */
+::-webkit-scrollbar {
+  height: 10px;
+  width: 0;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right,#FF0080,#7928CA);
 }

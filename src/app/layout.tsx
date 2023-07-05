@@ -3,6 +3,8 @@ import './globals.css'
 import { Roboto_Mono } from 'next/font/google'
 import { Footer } from '@/components/Footer'
 
+
+
 const RM = Roboto_Mono({ subsets: ['latin'] })
 
 export const metadata = {
@@ -17,10 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+      </head>
       <body className={RM.className}>
         <Navbar/>
         {children}
-      <Footer/>
+        <Footer />
       </body>
     </html>
   )

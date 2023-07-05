@@ -8,7 +8,7 @@ export const Navbar = () => {
       <Link href='/' className="text-white font-bold text-lg sm:text-xl md:text-2xl xl:text-3xl">
         👨‍💻 Dummy User
       </Link>
-      <Link className="flex  group"  href="/">
+      <Link className="flex  group"  href="/docs">
         <p
           className="text-[#f1f1f1]   text-sm xs:text-md sm:text-xl md:text-2xl"
          
