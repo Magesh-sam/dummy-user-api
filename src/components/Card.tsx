@@ -22,7 +22,7 @@ export const Card:FC<ICard> = async ({id}) => {
   return (
       <div className=" text-white  bg-gradient-to-r from-purple-600  to-pink-500 w-[280px] h-[400px] 
        rounded-lg flex flex-col items-center gap-3"  >
-          <Image src={data.avatar} alt="avatar" width={200} height={200} />
+          <Image loading="lazy" src={data.avatar} alt="avatar" width={200} height={200} />
           <p>Name: {data.first_name}</p>
           <p>Gender: {data.gender}</p>
           <p>Age: { data.age}</p>
