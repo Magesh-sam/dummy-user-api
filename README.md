@@ -44,7 +44,7 @@ Empower your team to iterate quickly and efficiently, all while delivering excep
   date_of_birth: string,
   age: number,
   gender: string,
-  email: string
+  email: string,
   Phone: string,
   location: {
     country: string,
