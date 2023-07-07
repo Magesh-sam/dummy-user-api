@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DUMMMY USER API 👨‍💻
+**[Dummy user API](https://dummyuser.vercel.app/ "Dummy user API")** can quickly produce a variety of profiles for your application, giving it a boost with actual user data and providing a lively and interesting user experience while saving you time.
 
-## Getting Started
+Designed in [**Figma**](https://www.figma.com/file/7JyXxYG1nM1ElI9sTeqN4J/API?type=design&node-id=0%3A1&mode=design&t=ocyC5QcRRZSfyDqc-1 "Figma"), Build with **NEXT.JS** and Deployed in **Vercel** with ❤️ by [**Mageshkannan**](https://github.com/magesh-sam "Mageshkannan")
 
-First, run the development server:
+## Why?
+Create dynamic user profiles on the fly with realistic personal details such as names, email addresses, usernames, and profile pictures, etc.., with Dummy User API.4
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+By leveraging the Dummy User API, you can streamline your development process, enhance user testing, and create more realistic and engaging experiences within your applications.
+
+Empower your team to iterate quickly and efficiently, all while delivering exceptional user experiences that reflect real-world scenarios.
+
+## Features
+- No Registration
+- Zero Configuration
+-  Basic and Advanced Query
+-  Filtered and Nested Endpoints
+- Supports GET, POST, PUT, PATCH, and, DELETE request
+
+##Resources
+- all users [https://dummyuser.vercel.app/users](https://dummyuser.vercel.app/users)
+- single user [https://dummyuser.vercel.app/users/1](https://dummyuser.vercel.app/users/1)
+- query [https://dummyuser.vercel.app/users/q?](https://dummyuser.vercel.app/users/q?)
+
+##Available Filters
+- first_name, last_name = q?first_name=name&last_name=name
+- first_name = q?first_name=name
+- last_name = q?last_name=name
+- ageGT, ageLT = q?ageGT=age&ageLT=age
+- ageGT = q?ageGT=age
+- ageLT = q?ageLT=age
+- country, city = q?country=name&city=name
+- country = q?country=name
+- city = q?city=name
+
+## Data types for Typescript
+
+```javascript
+{
+  id: number,
+  first_name: string,
+  last_name: string,
+  avatar: string,
+  date_of_birth: string,
+  age: number,
+  gender: string,
+  email: string
+  Phone: string,
+  location: {
+    country: string,
+    city: string,
+    postal_code: number
+  },
+  user: {
+    username: string,
+    password: string,
+    userid: string
+  },
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##How To
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Get all the users
+```javascript
+fetch('https://dummyuser.vercel.app/users')
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+More Examples and Guide Available on [https://dummyuser.vercel.app/docs](https://dummyuser.vercel.app/docs)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
