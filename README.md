@@ -1,5 +1,4 @@
 
-=======
 # DUMMMY USER API 👨‍💻
 **[Dummy user API](https://dummyuser.vercel.app/ "Dummy user API")** can quickly produce a variety of profiles for your application, giving it a boost with actual user data and providing a lively and interesting user experience while saving you time.
 
