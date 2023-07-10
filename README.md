@@ -71,4 +71,4 @@ fetch('https://dummyuser.vercel.app/users')
 
 More Examples and Guide Available on [https://dummyuser.vercel.app/docs](https://dummyuser.vercel.app/docs)
 
->>>>>>> b2c5c7fc04b9b3c43e12112b0446313249f70467
+
