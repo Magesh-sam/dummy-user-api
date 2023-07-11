@@ -2,6 +2,8 @@ import { Navbar } from '@/components/Navbar'
 import './globals.css'
 import { Roboto_Mono } from 'next/font/google'
 import { Footer } from '@/components/Footer'
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 
@@ -24,6 +26,7 @@ export default function RootLayout({
       <body className={RM.className}>
         <Navbar/>
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
