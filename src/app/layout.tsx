@@ -26,8 +26,8 @@ export default function RootLayout({
       <body className={RM.className}>
         <Navbar/>
         {children}
-        <Analytics />
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
